@@ -23,7 +23,7 @@
 /**
  * Configuration.h
  *
- * Basic settings such as:
+ * Basic settings such as:DEFAULT_Kp
  *
  * - Type of electronics
  * - Type of temperature sensor
@@ -299,7 +299,7 @@
 
 // Comment the following line to disable PID and enable bang-bang.
 #define PIDTEMP
-#define BANG_MAX 255 // limits current to nozzle while in bang-bang mode; 255=full current
+#define BANG_MAX 255 // limits curfrent to nozzle while in bang-bang mode; 255=full current
 #define PID_MAX BANG_MAX // limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current
 #if ENABLED(PIDTEMP)
   //#define PID_AUTOTUNE_MENU // Add PID Autotune to the LCD "Temperature" menu to run M303 and apply the result.
@@ -314,9 +314,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Ultimaker
-  #define  DEFAULT_Kp 22.2
-  #define  DEFAULT_Ki 1.08
-  #define  DEFAULT_Kd 114
+  #define  DEFAULT_Kp 26.47
+  #define  DEFAULT_Ki 1.97
+  #define  DEFAULT_Kd 89.12
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
@@ -486,7 +486,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 2519.68, 145, 140 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.20, 160.20, 2519.68, 290, 140 }
 
 /**
  * Default Max Feed Rate (mm/s)
