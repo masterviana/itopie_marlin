@@ -253,7 +253,7 @@
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
-#define TEMP_SENSOR_BED 0
+#define TEMP_SENSOR_BED 1
 
 // Dummy thermistor constant temperature readings, for use with 998 and 999
 #define DUMMY_THERMISTOR_998_VALUE 25
@@ -314,9 +314,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Ultimaker
-  #define  DEFAULT_Kp 26.47
-  #define  DEFAULT_Ki 1.97
-  #define  DEFAULT_Kd 89.12
+#define  DEFAULT_Kp 21.06
+#define  DEFAULT_Ki 1.28
+#define  DEFAULT_Kd 86.44
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
@@ -486,7 +486,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.20, 160.20, 2519.68, 290, 140 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.05, 160.05, 2519.68, 290, 140 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1002,7 +1002,7 @@
 // Attention: This is an EXPERIMENTAL feature, in the future the G-code arguments
 // may change to add new functionality like different wipe patterns.
 //
-//#define NOZZLE_CLEAN_FEATURE
+#define NOZZLE_CLEAN_FEATURE
 
 #if ENABLED(NOZZLE_CLEAN_FEATURE)
   // Number of pattern repetitions
