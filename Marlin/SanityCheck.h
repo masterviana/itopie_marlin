@@ -502,7 +502,7 @@
 #if ENABLED(Z_SAFE_HOMING)
   #if Z_SAFE_HOMING_X_POINT < MIN_PROBE_X || Z_SAFE_HOMING_X_POINT > MAX_PROBE_X
     #if HAS_BED_PROBE
-      #error "Z_SAFE_HOMING_X_POINT can't be reached by the Z probe."
+      #error "_ Z_SAFE_HOMING_X_POINT can't be reached by the Z probe."
     #else
       #error "Z_SAFE_HOMING_X_POINT can't be reached by the nozzle."
     #endif
